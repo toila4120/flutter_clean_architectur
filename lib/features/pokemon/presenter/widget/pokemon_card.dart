@@ -19,7 +19,10 @@ class PokemonCard extends StatelessWidget {
               color: Colors.grey,
             ),
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 20,
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -28,6 +31,7 @@ class PokemonCard extends StatelessWidget {
               const SizedBox(height: 16),
               Image.network(
                 state.pokemon.sprites!.other!.officialArtwork!.frontDefault,
+                height: MediaQuery.of(context).size.height * 0.3,
               ),
               const SizedBox(height: 16),
               Text("Cân nặng: ${state.pokemon.weight}"),
