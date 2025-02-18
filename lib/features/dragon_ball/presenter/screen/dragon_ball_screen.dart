@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architectur/features/dragon_ball/presenter/widget/button_random.dart';
+import 'package:flutter_clean_architectur/features/dragon_ball/presenter/widget/button_random_dragon_ball.dart';
 import 'package:flutter_clean_architectur/features/dragon_ball/presenter/widget/dragon_ball_card.dart';
 
 class DragonBallScreen extends StatefulWidget {
@@ -29,7 +29,7 @@ class _DragonBallScreenState extends State<DragonBallScreen> {
             SizedBox(height: 20),
             DragonBallCard(),
             SizedBox(height: 16),
-            ButtonRandom()
+            ButtonRandomDragonBall()
           ],
         ),
       ),

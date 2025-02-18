@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_clean_architectur/features/dragon_ball/presenter/bloc/dragon_ball_bloc.dart';
 
-class ButtonRandom extends StatelessWidget {
-  const ButtonRandom({super.key});
+class ButtonRandomDragonBall extends StatelessWidget {
+  const ButtonRandomDragonBall({super.key});
 
   @override
   Widget build(BuildContext context) {
