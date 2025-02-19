@@ -5,6 +5,7 @@ import 'package:flutter_clean_architectur/features/dragon_ball/domain/entity/dra
 
 class DragonBallRemoteDataSourceImpl extends DragonBallRemoteDataSource {
   const DragonBallRemoteDataSourceImpl();
+
   @override
   Future<DragonBall> getDragonBallRemoteDataSourceWithId(
       {required DragonBallWithIdParam param}) async {

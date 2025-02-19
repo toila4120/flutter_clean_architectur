@@ -13,7 +13,7 @@ class ButtonRandomDragonBall extends StatelessWidget {
       onPressed: () {
         context
             .read<DragonBallBloc>()
-            .add(GetDragonBallWithId(id: Random().nextInt(58)));
+            .add(GetDragonBallWithId(id: Random().nextInt(78)));
       },
       child: const Text("Ngẫu nhiên 1 nhân vật"),
     );
