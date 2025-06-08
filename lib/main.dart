@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => getIt<PokemonBloc>(),
+          create: (context) => PokemonBloc(),
         ),
         BlocProvider(
           create: (context) => DragonBallBloc(),

@@ -2,9 +2,6 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_clean_architectur/features/dragon_ball/data/model/Dragon_ball.dart';
 import 'package:flutter_clean_architectur/features/dragon_ball/domain/use_case/get_dragon_ball_with_id_use_case.dart';
-import 'package:flutter_clean_architectur/injection_container.dart';
-
-import '../../data/data_sources/dragon_ball_remote_data_source.dart';
 import '../../data/data_sources/dragon_ball_remote_data_source_impl.dart';
 import '../../data/repository/dragon_ball_repository_impl.dart';
 import '../../domain/entity/dragon_ball_with_id_param.dart';
@@ -36,7 +33,7 @@ class DragonBallBloc extends Bloc<DragonBallEvent, DragonBallState> {
       repository: repository,
     );
 
-    final DragonBall? dragonBall = await useCase.call(params);
-    emit(state.copyWith(dragonBall: dragonBall));
+    final DragonBall dragonBall = await useCase.call(params);
+    emit(state.copyWith(dragonBall: dragonBall,),);
   }
 }
